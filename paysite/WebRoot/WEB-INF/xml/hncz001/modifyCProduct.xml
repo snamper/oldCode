@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>商品修改</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>修改</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <!--  修改页面对应的表单数据  -->
+    <selectsql>select fRate,fState from AcClientProduct where fid='{id}'</selectsql>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->
+    <elements>
+        <element type="text"    name="fRate"  class="必填" tag="客户密价" tip="只能输入数字类型" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))">  
+        </element>
+        <element type="selectT" name="fState" class="必填" tag="商品状态" sql="" option="启用=0,禁用=1"  tip="">
+        </element>  
+    </elements>
+    <submittype>sql</submittype><!-- 提交类型分为“sql” 和"url" 值都是对应urlpara节点-->
+    <submiteurl >http://127.0.0.1:8080/ZfwebApi/ArticleReturn?sign=JFJ45F674WR7UDY6U547R6JY48D7F93&amp;</submiteurl>
+    <!--  <urlpara>
+    'out_trade_no={orderID}-'+document.getElementById('fid').value+'&amp;total_fee='+document.getElementById('fmoney').value+'&amp;trade_status=TRADE_FINISHED&amp;memo=手工加款&amp;opereateid=操作员'
+    </urlpara>   -->
+    <urlpara>'update AcClientProduct set fRate=$'+document.getElementById('fRate').value+'$,fState=$'+document.getElementById('fState').value+'$ where fid=$'+document.getElementById('id').value+'$'</urlpara>  
+</config>                     

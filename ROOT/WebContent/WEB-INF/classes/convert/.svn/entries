@@ -1,0 +1,41 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT/WebContent/WEB-INF/classes/convert
+svn://192.168.9.140
+
+
+
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+ConvertInterface.class
+file
+
+
+
+
+2011-09-28T10:39:27.482686Z
+d6bcff8f1f033577bf92d4b7153b1cbf
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+has-props
+

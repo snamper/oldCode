@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="clientForm"
+			type="com.agents.struts.actionform.ClientActionForm" />
+		<form-bean name="orderForm"
+			type="com.agents.struts.actionform.OrderActionForm" />
+		<form-bean name="generalFrom"
+			type="com.agents.struts.actionform.GeneralActionFrom" />
+		<form-bean name="staffForm"
+			type="com.agents.struts.actionform.StaffActionForm" />
+	</form-beans>
+	<global-exceptions/>
+	<global-forwards>
+		<forward name="loginout" path="/agentPage.do?method=findAgentByDomain"
+			redirect="true"></forward>
+	</global-forwards>
+	<action-mappings>
+		<action attribute="clientForm" name="clientForm" path="/client"
+			scope="request" type="com.agents.struts.action.ClientAction"
+			validate="false" cancellable="true" parameter="method">
+			<forward name="findCurrentClient" path="/admin/showUserInfo.jsp"></forward>
+			<forward name="loginout" path="/client.jsp" redirect="true"></forward>
+			<forward name="updateClientPage" path="/admin/updateUserInfo.jsp"></forward>
+			<forward name="updateClient" path="/client.do?method=findCurrentClient"></forward>
+			<forward name="loginSuccess" path="/index.jsp" redirect="true"></forward>
+			<forward name="login" path="/regdit.jsp" redirect="true"></forward>
+			<forward name="modifypwd" path="/admin/modifyPwd.jsp" ></forward>
+			<forward name="clientInfo" path="/admin/clientInfo.jsp" ></forward>  
+		</action>
+		<action attribute="orderForm" name="orderForm" path="/order"
+			scope="request" type="com.agents.struts.action.OrderAction" validate="false"
+			cancellable="true" parameter="method">
+			<forward name="orderList" path="/admin/order.jsp"></forward>
+		</action>
+		<action attribute="generalFrom" name="generalFrom" path="/general"
+			scope="request" type="com.agents.struts.action.GeneralAction"
+			validate="false" cancellable="true" parameter="method">
+			<forward name="staffList" path="/admin/staff/staffList.jsp"></forward>
+			<forward name="dataList" path="/admin/general.jsp"></forward>
+			<forward name="add" path="/admin/template/addTemplate.jsp"></forward>  
+			<forward name="modify" path="/admin/template/modify.jsp"></forward>
+			<forward name="statList" path="/admin/stat.jsp"></forward>
+			<forward name="index" path="/index.jsp"></forward>
+			<forward name="detail" path="/admin/template/detail.jsp"></forward>
+			<forward name="addorder" path="/admin/template/addorder.jsp"></forward> 
+			<forward name="addcardorder" path="/admin/template/addCardOrder.jsp"></forward> 
+		</action>  
+
+		<action attribute="clientForm" name="clientForm" path="/clientInfo"
+			scope="request" type="com.agents.struts.action.AgentInfoAction"
+			validate="false" cancellable="true" parameter="method">
+			<forward name="findMain" path="/main.jsp"></forward>
+		</action>
+		<action attribute="staffForm" name="staffForm" path="/staff"
+			scope="request" type="com.agents.struts.action.StaffAction"
+			validate="false" cancellable="true" parameter="method">
+			<forward name="addStaff" path="/admin/staff/addStaff.jsp"></forward> 
+			<forward name="modifyStaff" path="/admin/staff/modifyStaff.jsp"></forward>      
+		</action>
+	</action-mappings>
+	<message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

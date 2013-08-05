@@ -1,0 +1,53 @@
+.line02 { font-size: 12px; border-bottom-width: 1px; border-bottom-style: dashed; border-bottom-color: #D4D4D4; }
+.font7 { color: #294666; font-size: 14px; }
+.font13 { color: #737373; font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+.font15 { color: #333333; font-size: 19px; font-weight: bold; }
+
+.link7 { font-size: 12px; color: #333333; text-decoration: none; font-weight: normal; line-height: 19px; background-image: url(../21.jpg); height: 19px; background-repeat: repeat-x; padding-left: 5px; border: 1px solid #878787; }
+.link7:hover { font-size: 12px;  font-weight: normal; line-height: 19px; background-image: url(../21_a.jpg); height: 19px; background-repeat: repeat-x; padding-left: 5px; border: 1px solid #878787; }
+
+
+.login_txt1 {	border: 1px solid #A7A6AA;
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+	height: 28px;
+}
+.search_txt {height: 33px; width: 148px; font-size: 14px; color: #999999; line-height: 33px; background-color: #FFFFFF; background-image: url(../1_01.jpg); background-repeat: no-repeat; background-position: left; text-indent: 10px;}
+.search_txt1 {height: 33px; width: 124px; font-size: 14px; color: #999999; line-height: 33px; background-color: #FFFFFF; background-image: url(../1_03.jpg); background-repeat: no-repeat; background-position: left; text-indent: 5px;}
+.search_txt2 {height: 33px; width: 82px; font-size: 14px; color: #999999; line-height: 33px; background-color: #FFFFFF; background-image: url(../1_02.jpg); background-repeat: no-repeat; background-position: left; text-indent: 5px;}
+.font151 {	font-size: 14px;
+	color: #333333;
+	line-height: 24px;
+}
+
+.aniu01 { background-image: url(../8.jpg); background-repeat: no-repeat; height: 23px; width: 95px; }
+.aniu01:hover { background-image: url(../8_a.jpg); background-repeat: no-repeat; height: 23px; width: 95px; }
+.aniu02 {
+	background-image: url(../a7.jpg);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+	line-height: 20px;
+	color: #0C3B5F;
+}
+.aniu02:hover {
+	background-image: url(../a7_a.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+}
+.aniu03 {
+	background-image: url(../a10.jpg);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 54px;
+	text-align: center;
+	line-height: 20px;
+	color: #0C3B5F;
+}
+.aniu03:hover {
+	background-image: url(../a10_a.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+}

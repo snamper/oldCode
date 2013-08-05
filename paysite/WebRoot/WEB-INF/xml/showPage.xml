@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<agent>
+	<id>hncz001</id>
+	<domainName>168.9.149</domainName>
+	<domainAgent>192</domainAgent>
+	<giveIP>127.0.0.1:8080</giveIP>
+	<menuConfig>menudianxin</menuConfig>
+	<styleConfig>03</styleConfig>
+	<masterCSS>master_03.css</masterCSS>
+	<leftCSS>left_03.css</leftCSS>
+	<topCSS>top_03.css</topCSS>
+	<photoName>img_03</photoName>
+	<jsName>js_03</jsName>
+	<contentCSS>content_03.css</contentCSS>
+	<login>login_03.html</login>
+</agent>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>用户加款</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>加款</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <selectsql>0</selectsql>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->
+    <elements>
+<!--        <element type="select" name="fid" class="必填" tag="客户ID" sql="select fid, fName from CoClient where fAgentID = '{agentId}'" tip="">-->
+<!--        </element>-->
+        <element type="text" name="fmoney" class="必填" tag="加款金额" tip="只能输入数字类型" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))">  
+        </element>
+          
+    </elements>
+    <submiteurl>http://127.0.0.1:8080/ZfwebApi/ArticleReturn?sign=JFJ45F674WR7UDY6U547R6JY48D7F93&amp;</submiteurl>
+    <urlpara>
+    'out_trade_no={orderID}-'+'&amp;total_fee='+document.getElementById('fmoney').value+'&amp;trade_status=TRADE_FINISHED&amp;memo=手工加款&amp;opereateid=操作员'
+    </urlpara>  
+</config>  

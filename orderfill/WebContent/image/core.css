@@ -1,0 +1,123 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+A {
+	TEXT-DECORATION: none
+}
+.clr {
+	HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden
+}
+A.closeBtn {
+	BORDER-BOTTOM: #85b6e2 1px solid; POSITION: absolute; TEXT-ALIGN: center; BORDER-LEFT: #85b6e2 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 0px; WIDTH: 60px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: #fff; COLOR: #333; BORDER-TOP: #85b6e2 1px solid; RIGHT: 10px; BORDER-RIGHT: #85b6e2 1px solid; PADDING-TOP: 4px; TOP: 10px
+}
+A.closeBtn:hover {
+	BORDER-BOTTOM: #85b6e2 1px solid; BORDER-LEFT: #85b6e2 1px solid; BACKGROUND: #85b6e2; COLOR: #fff; BORDER-TOP: #85b6e2 1px solid; BORDER-RIGHT: #85b6e2 1px solid
+}
+BODY {
+	PADDING-BOTTOM: 200px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 10px
+}
+H1 {
+	TEXT-ALIGN: center; COLOR: #85b6e2; PADDING-TOP: 20px
+}
+.example {
+	BORDER-BOTTOM: #ccc 1px dashed; BORDER-LEFT: #ccc 1px dashed; PADDING-BOTTOM: 40px; MARGIN-TOP: 10px; PADDING-LEFT: 40px; PADDING-RIGHT: 40px; ZOOM: 1; BORDER-TOP: #ccc 1px dashed; BORDER-RIGHT: #ccc 1px dashed; PADDING-TOP: 40px
+}
+.example .description {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 80px; PADDING-RIGHT: 20px; FLOAT: left; COLOR: #85b6e2; FONT-SIZE: 20px; PADDING-TOP: 10px
+}
+.example .tigger {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 80px; PADDING-RIGHT: 10px; DISPLAY: block; BACKGROUND: #fff; FLOAT: left; COLOR: #333; BORDER-TOP: #999 1px solid; CURSOR: pointer; BORDER-RIGHT: #999 1px solid; PADDING-TOP: 10px
+}
+.example SELECT {
+	MARGIN-TOP: 10px
+}
+.blk {
+	POSITION: relative; WIDTH: 500px
+}
+.blk .head {
+	BACKGROUND: url(images/pop_up_bg.png); HEIGHT: 4px; OVERFLOW: hidden
+}
+.blk .head-right {
+	BACKGROUND: url(images/pop_up_bg.png); HEIGHT: 4px; OVERFLOW: hidden
+}
+.blk .foot {
+	BACKGROUND: url(images/pop_up_bg.png); HEIGHT: 4px; OVERFLOW: hidden
+}
+.blk .foot-right {
+	BACKGROUND: url(images/pop_up_bg.png); HEIGHT: 4px; OVERFLOW: hidden
+}
+.blk .head {
+	PADDING-LEFT: 4px
+}
+.blk .head-right {
+	BACKGROUND-POSITION: right top
+}
+.blk .foot {
+	PADDING-LEFT: 4px; BACKGROUND-POSITION: left bottom; _height: 3px
+}
+.blk .foot-right {
+	BACKGROUND-POSITION: right bottom
+}
+.blk .main {
+	POSITION: relative; BORDER-LEFT: #85b6e2 2px solid; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #fff; BORDER-RIGHT: #85b6e2 2px solid; PADDING-TOP: 20px
+}
+.blk .main2 {
+	POSITION: relative; BORDER-LEFT: #85b6e2 2px solid; BACKGROUND: #fff; BORDER-RIGHT: #85b6e2 2px solid
+}
+.blk .main H2 {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT: bold 16px "Microsoft YaHei"; COLOR: #85b6e2; PADDING-TOP: 10px
+}
+.blk .main UL {
+	ZOOM: 1; MARGIN-BOTTOM: 10px; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+.blk .main UL LI {
+	TEXT-ALIGN: left; LINE-HEIGHT: 10px; MARGIN-BOTTOM: 10px; FLOAT: left
+}
+.blk .main UL LI A {
+	DISPLAY: block; COLOR: #333
+}
+.blk .main UL LI A:hover {
+	BACKGROUND: #85b6e2; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.t5 .blk {
+	WIDTH: 700px
+}
+.t5 .blk H2 {
+	COLOR: #aaa
+}
+.t5 .blk .main UL LI A {
+	COLOR: #aaa
+}
+.t5 .blk .head {
+	BACKGROUND: url(images/pop_up_bg2.png)
+}
+.t5 .blk .head-right {
+	BACKGROUND: url(images/pop_up_bg2.png)
+}
+.t5 .blk .foot {
+	BACKGROUND: url(images/pop_up_bg2.png)
+}
+.t5 .blk .foot-right {
+	BACKGROUND: url(images/pop_up_bg2.png)
+}
+* HTML .popup_iframe {
+	
+}

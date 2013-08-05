@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>/WEB-INF/classes/applicationContext.xml</param-value>
+ </context-param>
+ <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
+  <listener>
+  <listener-class>com.jinrl.powermodule.common.SessionListener</listener-class>
+ </listener>
+ <servlet>
+  <servlet-name>action</servlet-name>
+  <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+  <init-param>
+   <param-name>config</param-name>
+   <param-value>/WEB-INF/struts-config.xml</param-value>
+  </init-param>
+  <init-param>
+   <param-name>debug</param-name>
+   <param-value>3</param-value>
+  </init-param>
+  <init-param>
+   <param-name>detail</param-name>
+   <param-value>3</param-value>
+  </init-param>
+  <load-on-startup>0</load-on-startup>
+ </servlet>
+ <servlet>
+  <servlet-name>checkcode</servlet-name>
+  <servlet-class>com.jinrl.powermodule.common.CheckCode</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>checkIPUseridServlet</servlet-name>
+  <servlet-class>com.jinrl.powermodule.action.checkIPUseridServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>PowerManageServlet</servlet-name>
+  <servlet-class>com.jinrl.powermodule.action.PowerManageServlet</servlet-class>
+ </servlet>
+  <servlet>
+    <servlet-name>RefreshWarnServlet</servlet-name>
+    <servlet-class>com.jinrl.powermodule.action.RefreshWarnServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyDeskTopServlet</servlet-name>
+    <servlet-class>com.jinrl.powermodule.action.MyDeskTopServlet</servlet-class>
+  </servlet>
+
+  	<servlet>
+        <servlet-name>jcaptcha</servlet-name>
+        <servlet-class>com.octo.captcha.servlet.image.SimpleImageCaptchaServlet</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+        <servlet-name>jcaptcha</servlet-name>
+        <url-pattern>/jcaptcha.jpg</url-pattern>
+	</servlet-mapping>
+
+ <servlet-mapping>
+  <servlet-name>action</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>checkcode</servlet-name>
+  <url-pattern>/validatecode</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>checkIPUseridServlet</servlet-name>
+  <url-pattern>/checkIPUID</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>PowerManageServlet</servlet-name>
+  <url-pattern>/PowerManageServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshWarnServlet</servlet-name>
+    <url-pattern>/RefreshWarnServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyDeskTopServlet</servlet-name>
+    <url-pattern>/MyDeskTopServlet</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>desktop.jsp</welcome-file>
+ </welcome-file-list>
+ <filter>
+ 	<filter-name>checkLogin</filter-name>
+ 	<filter-class>com.jinrl.powermodule.common.CheckLogin</filter-class>
+ </filter>
+ <filter-mapping>
+ 	<filter-name>checkLogin</filter-name>
+ 	<url-pattern>*.jsp</url-pattern>
+ </filter-mapping>
+ <error-page>
+  <error-code>500</error-code>
+  <location>/error500.jsp</location>
+ </error-page>
+ <error-page>
+  <error-code>404</error-code>
+  <location>/error404.jsp</location>
+ </error-page>
+ <jsp-config>
+  <taglib>
+   <taglib-uri>/WarnTag</taglib-uri>
+   <taglib-location>/WEB-INF/WarnTag.tld</taglib-location>
+  </taglib>
+ </jsp-config>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>

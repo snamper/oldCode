@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!--一级菜单-->
+  
+   <firstlevel title="订单管理">
+	   <secondlevel title="订单查询" href="general.do?method=findDataList&amp;name=order">
+	   </secondlevel>
+       <secondlevel title="订单统计" href="general.do?method=findDataList&amp;name=jiesuan">
+	   </secondlevel>  
+	   <secondlevel title="订单投诉" href="general.do?method=findDataList&amp;name=">   
+	   </secondlevel> 
+	   
+   </firstlevel>
+    <firstlevel title="下级管理">
+	   <secondlevel title="新增商户" href="general.do?method=findDataList&amp;name=">
+	   </secondlevel>
+       <secondlevel title="商户查询" href="general.do?method=findDataList&amp;name=">
+	   </secondlevel>  
+   </firstlevel>
+     <firstlevel title="商品管理">
+		   <secondlevel title="代理商品" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>
+	       <secondlevel title="商品管理" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>  
+		    <secondlevel title="下级商品" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel> 
+   </firstlevel>
+   <firstlevel title="财务管理">
+		   <secondlevel title="帐户加款" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>
+	       <secondlevel title="资金变动" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>  
+		    <secondlevel title="财务统计" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel> 
+		   <secondlevel title="账户提现" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>
+   </firstlevel>
+    <firstlevel title="接入管理">
+		   <secondlevel title="资料下载" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>
+	       <secondlevel title="接口信息" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>  
+		    <secondlevel title="卡类代码" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel> 
+		   <secondlevel title="网银代码" href="general.do?method=findDataList&amp;name=">
+		   </secondlevel>
+   </firstlevel>
+   
+</config>

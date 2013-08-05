@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>订单详细</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>返回</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <!--  修改页面对应的表单数据  -->
+    <selectsql>select ao.fID, CONVERT(VARCHAR(23),fCreateTime,120)fCreateTime, fOrderID, fProductID,ap.fName,ao.fPrice, fPlayName, fNumber, fMoney, fLackMoney, fCountType,fAccountType, fFillRange, fFillServer, fUserArea, fOverTime, ao.fState, fNoticeState, fNoticeUrl,finfo1,finfo2,finfo3 from AcOrder ao left join AcProduct ap on ao.fProductID=ap.fID where ao.fid='{id}'</selectsql>
+   <fieldChange>
+		<fieldChangeList>16,17</fieldChangeList>
+		<col_16>4=充值成功,5=充值失败,?=处理中</col_16>
+		<col_17>2=成功,3=失败,?=通知中</col_17>
+	</fieldChange>
+	
+    <!-- 页面元素：参数"name"对应数据库字段名 -->  
+    <elements>
+        <element type="text"  name="fID"  class="必填" tag="系统订单号" tip="" size="30">      
+        </element>
+        <element type="text"  name="fCreateTime"  class="必填" tag="接收时间" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fOrderID"  class="必填" tag="客户订单号" tip="" size="30"> 
+        </element>  
+        <element type="text"  name="fProductID"  class="必填" tag="商品编号" tip="" size="30"> 
+        </element>
+        <element type="text"  name="ap.fName"  class="必填" tag="商品名称" tip="" size="60"> 
+        </element>
+        <element type="text"  name="ao.fPrice"  class="必填" tag="面额" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fPlayName"  class="必填" tag="充值账号" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fNumber"  class="必填" tag="数量" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fMoney"  class="必填" tag="金额" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fLackMoney"  class="必填" tag="未充金额" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fCountType"  class="必填" tag="计费类型" tip="" size="30"> 
+        </element>
+         <element type="text"  name="fAccountType"  class="必填" tag="账号类型" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fFillRange"  class="必填" tag="充值区域" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fFillServer"  class="必填" tag="充值游戏/服务器" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fUserArea"  class="必填" tag="地区信息" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fOverTime"  class="必填" tag="最后处理时间" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fState"  class="必填" tag="订单状态" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fNoticeState"  class="必填" tag="通知状态" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fNoticeUrl"  class="必填" tag="通知地址" tip="" size="60"> 
+        </element>
+         <element type="text"  name="finfo1"  class="必填" tag="附加信息1" tip="" size="60"> 
+        </element>
+        <element type="text"  name="finfo2"  class="必填" tag="附加信息2" tip="" size="60"> 
+        </element>
+        <element type="text"  name="finfo3"  class="必填" tag="附加信息3" tip="" size="60"> 
+        </element>
+    </elements>
+</config>            

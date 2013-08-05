@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listeners>
+	<listener>
+		<listener-class>allot.Listener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>cost.Listener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>notice.ListenerNoitce</listener-class>
+	</listener>
+</listeners>

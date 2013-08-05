@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!--一级菜单-->
+  <firstlevel title="账户资料">
+	   <secondlevel title="修改密码" href="client.do?method=modifyPwd">   
+	   </secondlevel> 
+   </firstlevel>
+   <firstlevel title="订单管理">
+<!--	   <secondlevel title="订单查询" href="general.do?method=findDataList&amp;name=dianxinorder">-->
+<!--	   </secondlevel>-->
+	   <secondlevel title="订单统计" href="general.do?method=findStatList&amp;name=moneyStat">
+	   </secondlevel>
+	   <secondlevel title="充值记录" href="general.do?method=findDataList&amp;name=filllog">
+	   </secondlevel>    
+   </firstlevel>
+<!--<firstlevel title="商品管理">-->
+<!--        <secondlevel title="商品信息" href="general.do?method=findDataList&amp;name=productInfo">-->
+<!--		</secondlevel>-->  
+<!--		<secondlevel title="下级商品" href="general.do?method=findDataList&amp;name=productDown">-->
+<!--		</secondlevel>-->  
+<!--</firstlevel>-->     
+   <firstlevel title="财务管理">
+	         <secondlevel title="资金变动" href="general.do?method=findDataList&amp;name=moneyChange">
+		     </secondlevel>  
+		     <secondlevel title="余额查询" href="general.do?method=findDataList&amp;name=clientmoney">
+		     </secondlevel>
+		     <secondlevel title="用户加款" href="general.do?method=addData&amp;name=addData">  
+		     </secondlevel>
+		     <secondlevel  title="加款记录" href="general.do?method=findDataList&amp;name=addmoneylog">
+		     </secondlevel>   
+   </firstlevel>  
+<!--   <firstlevel title="商品管理">-->
+<!--	         <secondlevel title="商品管理" href="general.do?method=findDataList&amp;name=clientproductList">-->
+<!--		     </secondlevel>    -->
+<!--   </firstlevel>-->
+</config>

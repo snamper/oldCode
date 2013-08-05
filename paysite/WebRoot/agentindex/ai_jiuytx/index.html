@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>亿通支付平台</title>
+<link href="images/style/login.css" rel="stylesheet" type="text/css" />
+</head>
+<script language="JavaScript">
+//校验搜索关键字 
+function checkkey() 
+{ 
+	var userName=document.getElementById("userName").value;
+	var passWord=document.getElementById("passWord").value;
+	var checkCode=document.getElementById("checkCode").value;
+	var patrn=/^[^`~!@#$%^&*()+=|\\\][\]\{\}:;'\,.<>/?]{1}[^`~!@$%^&()+=|\\\][\]\{\}:;'\,.<>?]{0,19}$/; 
+	if(userName!=""){
+		   if (!patrn.exec(userName)){
+			   alert("请重新输入用户名,不能输入特殊字符！");
+			return false 
+		   }
+	} if(passWord!=""){
+		   if (!patrn.exec(passWord)){
+			   alert("请重新输入密码,不能输入特殊字符！");
+			return false 
+		   }  
+	}  if(checkCode!=""){
+		   if (!patrn.exec(checkCode)){
+			   alert("请重新输入验证码,不能输入特殊字符！");
+			return false 
+		   }
+	}  
+    return true 
+    } 
+</script>
+<body>
+<div id="mark$header">
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="360" height="96"><img src="images/logo.jpg" width="360" onclick="javascrip:window.location='agentPage.do?method=findAgentByDomain'" height="96" /></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>  
+</div>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+<form  id="form1" name="form1" method="post" action="loginServlet" onsubmit="return checkkey();">
+ <input type="hidden" value="" name="disk" id="disk"/>
+ <tr>
+    <td width="583" height="420" valign="top"><img src="images/002.jpg" width="583" height="348" /></td>
+    <td width="346" valign="top" background="images/003.jpg" ><table width="346" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="30" colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="83" align="right"><img src="images/1.jpg" width="44" height="38" /></td>
+        <td>&nbsp;</td>
+        <td><img src="images/2.jpg" width="197" height="38" /></td>
+      </tr>
+      <tr>
+        <td height="22" colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="83" height="31" align="right" class="font6">用户名</td>
+        <td width="14">&nbsp;</td>
+        <td><input name="input$userid" type="text"  tabindex="1"  class="link2" id="input$userid" size="12" maxlength="24"/></td>
+      </tr>
+      <tr>
+        <td height="13" colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td height="31" align="right" class="font6">密&nbsp;&nbsp;码</td>
+        <td width="14" height="29">&nbsp;</td>
+        <td align="left" class="font4"><a href="#" class="link5"></a>
+            <input name="input$password"  tabindex="2" type="password" id="input$password" class="link2" maxlength="30"/></td>
+      </tr>
+      <tr>
+        <td height="13" colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td height="31" align="right" class="font6">验证码</td>
+        <td width="14">&nbsp;</td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="90">
+                 <input  name="input$checkcode" id="input$checkcode" tabindex="3" type="text" class="link4" maxlength="8"/>
+              </td>
+              <td width="12">&nbsp;</td>
+              <td align="left"><div id="img$checkcode"><img src="images/12.jpg" width="77" height="29" /></div></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="16" colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td height="22" class="font3">&nbsp;&nbsp;还没有注册帐户？ <a href="regdit.jsp" class="link5">立即注册</a></td>
+      </tr>  
+      <tr>  
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td height="24" class="font3">&nbsp;&nbsp;尽量避免多人使用一个账号</td>
+      </tr>
+      <tr>
+        <td height="16" colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td width="14">&nbsp;</td>
+        <td height="24"><input name="Submit" type="submit" class="link3" value="  " /></td>
+      </tr>
+      </from>
+    </table></td>
+    <td valign="top"><img src="images/004.jpg" width="74" height="348" /></td>
+  </tr>
+</table>
+<div id="mark$footer">
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="30">&nbsp;</td>
+    <td width="350" height="55" valign="top" class="line_up" style="padding-top:20px;">2010 JiuYi Background Management System  | 帮助 </td>
+    <td align="right" valign="top" class="line_up" style="padding-top:20px;"> Copyright (C) 2009-2012  Corporation, All Rights Reserved [京ICP备11045851号-2]</td>
+    <td width="30">&nbsp;</td>
+  </tr>
+</table>
+</div>   
+</body>  
+</html>  

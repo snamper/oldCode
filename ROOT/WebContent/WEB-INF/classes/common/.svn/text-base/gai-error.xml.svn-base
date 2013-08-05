@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<error>
+<config> 
+	<out-type>debug_,key_,warning_,error</out-type> 
+	<write-type>debug_,key_,warning_,error</write-type> 
+	<write-file-path>c:\sun\log</write-file-path> 
+</config>
+</error> 

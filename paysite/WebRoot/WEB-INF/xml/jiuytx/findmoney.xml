@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>帐户余额</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>返回</buttonname>
+    <!-- 对应表名 -->  
+    <tablename>0</tablename>
+    <!--  修改页面对应的表单数据  -->
+    <selectsql>
+         select fName,fMoney from CoClient cc left join  CoClientMoney ccm on cc.fID=ccm.fID  where cc.fid='{id}'</selectsql>
+    <fieldChange>
+		<fieldChangeList></fieldChangeList>
+		<col_16></col_16>
+		<col_17></col_17>
+	</fieldChange>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->  
+    <elements>
+        <element type="text"  name="fName"  class="必填" tag="帐户名称" tip="" size="30">      
+        </element>
+        <element type="text"  name="fMoney"  class="必填" tag="帐户余额" tip="" size="30"> 
+        </element>
+    </elements>
+</config> 

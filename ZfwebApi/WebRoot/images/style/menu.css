@@ -1,0 +1,14 @@
+/* 在造型样式 */
+#nav { padding-left:19px; width:178px; height:auto; position:relative; margin-right: auto; margin-left: auto; padding-top: 23px; padding-bottom: 168px; }
+#nav .select, #nav .current { margin:0; padding:0; list-style:none; display:block; }
+#nav ul { display: block; list-style-type: none; padding: 0px; height: auto; width: auto; }
+#nav li { display:block; height:42px; line-height: 42px; float:left; width:100%; background-image: url(../6.jpg); background-repeat: no-repeat; background-position: right top; }
+#nav li:hover { cursor:pointer; width: 178px; background-image: url(../7.jpg); background-repeat: no-repeat; line-height: 42px; background-position: right top; height: 42px; display: block; }
+#nav a { color: #000000; text-decoration: none; }
+#nav a:hover { color: #166E3C; text-decoration: none; display: block; }
+#nav .current { background-image: url(../7.jpg); background-repeat: no-repeat; background-position: right top; }
+#nav .current a { color: #166E3C; font-weight: bold; }
+#nav p { display: block; float: left; height: 42px; width: 31px; margin-left: 33px; }
+#nav span { line-height: 42px; height: 42px; display: block; float: left; margin-left: 16px; }
+#nav .select, #nav .current { display:block; color:#000000; height: 42px; width: 178px; line-height: 42px; text-align: center; font-size: 14px; }
+#nav .sub { display:none; }

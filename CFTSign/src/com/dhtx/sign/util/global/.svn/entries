@@ -1,0 +1,112 @@
+10
+
+dir
+0
+https://study-struts2.googlecode.com/svn/jinrl/CFTSign/src/com/dhtx/sign/util/global
+https://study-struts2.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+af312ae2-77e0-5470-2533-c5fa87fdb5d9
+
+HttpSsl.java
+file
+
+
+
+add
+
+DataConnect.java
+file
+
+
+
+add
+
+ConnectPool.java
+file
+
+
+
+add
+
+DataBase.java
+file
+
+
+
+add
+
+ConnectInfo.java
+file
+
+
+
+add
+
+md5.java
+file
+
+
+
+add
+
+CheckCode.java
+file
+
+
+
+add
+
+fc.java
+file
+
+
+
+add
+
+Common.java
+file
+
+
+
+add
+
+DataAccess.java
+file
+
+
+
+add
+
+fw.java
+file
+
+
+
+add
+
+HandleXmlSample.java
+file
+
+
+
+add
+

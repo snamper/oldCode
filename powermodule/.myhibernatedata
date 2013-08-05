@@ -1,0 +1,25 @@
+#MyEclipse Hibernate Properties
+#Wed Dec 01 11:14:07 CST 2010
+sessionFactoryName=com.jinrl.powermodule.pojo.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=assigned
+libInstallFolder=/WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/powermodule/src/hibernate.cfg.xml
+createConfigFile=false
+addLibs2Classpath=true
+baseDaoClass=com.jinrl.powermodule.dao.BaseHibernateDAO

@@ -1,0 +1,40 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT/src/convert
+svn://192.168.9.140
+
+
+
+2011-10-21T13:25:52.343750Z
+380
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+ConvertInterface.java
+file
+435
+
+
+
+2011-12-20T11:48:52.457208Z
+18d340a59facf9ba51530514eb883d1e
+2011-12-21T01:50:24.475625Z
+435
+renfy
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>帐户加款</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>加款</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>  
+    <selectsql>0</selectsql>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->
+    <elements>
+<!--   textT 类型的文本框，添加时value 从后台传值 -->
+        <element type="textT" name="fid" class="必填" tag="帐户ID"  tip="" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))" value="{clientId}"></element>
+<!--        <element type="select" name="fid" class="必填" tag="客户ID" sql="select fid, fName from CoClient where fAgentID = '{agentId}'" tip=""></element>-->
+        <element type="text" name="fmoney" class="必填" tag="加款金额" tip="只能输入数字类型" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))"></element>
+        <element type="enumerate" name="addMoneyType" class="必填" tag="加款方式" tip="" sql="select 0,'鼎恒支付宝' union all select 1,'专用财付通' union all select 2,'鼎恒财付通' union all select 3,'华丹支付宝'"></element>
+    </elements>
+
+<!--    <submiteurl>http://58.83.145.20:8084/ZfwebApi/alipay_index.jsp?</submiteurl>-->
+    <submiteurl>http://{agentdomain}/ZfwebApi/alipay_index.jsp?</submiteurl>
+<!--    <submiteurl>http://{agentdomain}/ZfwebApi/caiftRequest.jsp?</submiteurl>-->
+    <urlpara>
+   'addMoneyType='+document.getElementById('addMoneyType').value+'@-@orderid={orderID}-'+document.getElementById('fid').value+'@-@money='+document.getElementById('fmoney').value+'@-@sign=md5{orderID}-'+document.getElementById('fid').value+document.getElementById('fmoney').value
+    </urlpara>  
+</config>      

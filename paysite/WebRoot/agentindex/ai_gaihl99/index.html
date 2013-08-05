@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>充吧充值销售系统</title>
+<link href="images/style/master.css" rel="stylesheet" type="text/css" />
+</head>
+<script language="JavaScript">
+//校验搜索关键字 
+function checkkey() 
+{ 
+	var userName=document.getElementById("userName").value;
+	var passWord=document.getElementById("passWord").value;
+	var checkCode=document.getElementById("checkCode").value;
+	var patrn=/^[^`~!@#$%^&*()+=|\\\][\]\{\}:;'\,.<>/?]{1}[^`~!@$%^&()+=|\\\][\]\{\}:;'\,.<>?]{0,19}$/; 
+	if(userName!=""){
+		   if (!patrn.exec(userName)){
+			   alert("请重新输入用户名,不能输入特殊字符！");
+			return false 
+		   }
+	} if(passWord!=""){
+		   if (!patrn.exec(passWord)){
+			   alert("请重新输入密码,不能输入特殊字符！");
+			return false 
+		   }  
+	}  if(checkCode!=""){
+		   if (!patrn.exec(checkCode)){
+			   alert("请重新输入验证码,不能输入特殊字符！");
+			return false 
+		   }
+	}  
+    return true 
+    } 
+</script>
+<body>
+<!--页眉开始-->
+<div id="mark$header">
+<div id="header">
+  <div id="header_left"><img src="images/logo.png" width="300" height="83" /></div>
+  <div id="header_right">
+    <div id="mainbar"><a href="agentPage.do?method=findAgentByDomain" class="link1">首页</a> | <a href="agentPage.do?method=openCharges" class="link1">结算费率</a> | <a href="agentPage.do?method=openSerch" class="link1">订单查询</a> | <a href="service.jsp" class="link1">服务条款</a></div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>  
+<!--内容开始-->
+<div id="centent">
+  <div id="centent_left">
+    <div id="news">
+      <dl>
+        <dt><img src="images/2.png" width="46" height="42" /></dt>
+        <dd>
+          <h3>技术力量</h3>
+          <p>专业团队为客户提供一站式技术服务,全心全意诚心服务</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><img src="images/3.png" width="46" height="42" /></dt>
+        <dd>
+          <h3>安全保障</h3>
+          <p>充值安全，确保支付结果及时送达，高度的结算机制多维度单据查询。</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt><img src="images/4.png" width="46" height="42" /></dt>
+        <dd>
+          <h3>服务承诺</h3>
+          <p>提供了立体化服务，让您从点滴中感受到我们对您的关注。</p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div id="centent_right">
+    <!--登录开始-->
+    <div id="login">
+      <div id="login_title"><img src="images/1.png" width="322" height="87" /></div>
+      <div id="login_centent">
+        <table width="322" border="0" align="left" cellpadding="0" cellspacing="0" class="font3">
+        <form  id="form1" name="form1" method="post" action="loginServlet" onsubmit="return checkkey();">
+        <input type="hidden" value="" name="disk" id="disk"/>
+          <tr>
+            <td height="39" colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="71" height="26"><span class="font10">&nbsp;&nbsp;用户名：</span></td>
+            <td><input name="input$userid" type="text"  class="link4" id="input$userid" size="12" maxlength="24"/></td>
+            <td width="58" align="right"><a href="regdit.jsp" class="link2">注册账号</a></td>
+          </tr>
+          <tr>
+            <td height="14" colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="26"><span class="font10">&nbsp;&nbsp;密码：</span></td>
+            <td><input name="input$password" type="password"  class="link5" maxlength="14" id="input$password"/></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="14" colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="26">&nbsp;&nbsp;验证码：</td>
+            <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="90"><input name="input$checkcode" type="text"  class="link6" id="input$checkcode" maxlength="8"/></td>
+                  <td width="12">&nbsp;</td>
+                  <td align="left"><div id="img$checkcode"><img src="images/temp_01.jpg" width="76" height="25" onclick="this.src='checkCode?'+new Date().getTime();" /></div></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td height="14" colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="26">&nbsp;</td>
+            <td colspan="2"><a href="index.html"><input type="image" src="images/ico_01.gif" width="79" height="24" border="0" /></a>&nbsp;&nbsp;&nbsp;
+            <img src="images/ico_02.gif" width="79" height="24" onclick="document.form1.reset();" /></td>
+          </tr></form>
+        </table>
+      </div>
+    </div>
+    <!--登录结束-->
+    <div id="service"><div id="out$qq1"><img src="images/7.jpg" width="137" height="28" /></div></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--内容结束-->
+<!--页脚开始-->
+<div id="mark$footer">
+<div id="footer">
+  <div id="footer_left">Copyright 2010-2011 GmLong.com Corporation. All rights reserved  京ICP证XXXXXX号<br />
+    亿通支付平台 System Powered By GmLong </div>
+    <div id="footer_right"><span class="font1_1" >完善的游戏运营商服务 多元化的支付方式</span><br />
+    <span class="font1_1" >电话：</span><span class="font2_1"> <div id="out$phone">0110-88888888</div> （7*24) </span>
+    </div>
+  <div class="clear"></div>
+</div>
+</div>
+<!--页脚结束-->
+</body>
+</html>
+<script>
+window.onload =disk();
+function disk() {//硬盘序列号 信息
+　　　var locator = new ActiveXObject("WbemScripting.SWbemLocator");
+　　　var service = locator.ConnectServer(".");
+　　　var properties = service.ExecQuery("SELECT * FROM Win32_DiskDrive");
+　　　var e = new Enumerator (properties);
+　　  var valuep="";
+　　　for (;!e.atEnd();e.moveNext ())
+　　　{
+　　　　　　var p = e.item ();
+           valuep=p.signature;
+　　　}
+
+document.getElementById("disk").value=valuep;     
+}   
+</script>

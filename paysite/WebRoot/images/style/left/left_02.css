@@ -1,0 +1,27 @@
+
+
+
+
+#sidebar { height: auto; width: 210px; background-color: #DFE1E3; }
+#sidebar ul { list-style-type: none; overflow:hidden; }
+#sidebar ul li { list-style-type: none; background-image: url(../../img_02/05.jpg); background-repeat: repeat-x; }
+#left #sidebar ul li a { display: block; height: 40px; width: 118px; float: left; line-height: 40px; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; }
+#sidebar ul li a:hover { display: block; height: 40px; width: 118px; float: left; line-height: 40px; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; }
+#left #sidebar ul li img { display: block; height: 40px; width: 28px; padding-left: 30px; padding-right: 10px; float: left; }
+#sidebar dl { display: block; height: 34px; width: 210px; list-style-type: none; background-image: url(../../img_02/07.jpg); background-repeat: no-repeat; background-position: bottom; }
+#sidebar dl:hover { display: block; height: 34px; width: 210px; list-style-type: none; background-image: url(../../img_02/09.jpg); background-repeat: no-repeat; }
+#sidebar .current { background-image: url(../../img_02/09.jpg); background-repeat: no-repeat; color: #FFFFFF; }
+#sidebar .current a { color: #FFFFFF; }
+#sidebar dt { display: block; float: left; height: 34px; width: 63px; }
+#sidebar dd { line-height: 34px; display: block; height: 34px; width: 147px; float: right; }
+#sidebar dd:hover { line-height: 34px; display: block; height: 34px; width: 147px; float: right; color: #FFFFFF; }
+#left #sidebar ul dd a { display: block; height: 34px; width: 147px; color: #40474D; text-decoration: none; }
+#left #sidebar ul dd a:hover { display: block; height: 34px; width: 147px; color: #ffffff; text-decoration: none; }
+
+#help { position:absolute; bottom:0px; height: 48px; width: 210px; background-color:#E0E1E5; left: 0px; }
+#help a { overflow:hidden; word-wrap:break-word; word-break:break:all;
+font-size:12px; text-decoration: none; }
+#help a:hover { overflow:hidden; word-wrap:break-word; word-break:break:all;
+font-size:12px; text-decoration: none; }
+#help_txt { line-height: 20px; height: 20px; width: 195px; padding-left: 15px; }
+#help_copyright { height: 28px; width: 195px; line-height: 23px; padding-left: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-image: url(../../img_02/07.jpg); background-repeat: no-repeat; background-position: top; }

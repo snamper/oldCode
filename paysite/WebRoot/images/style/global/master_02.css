@@ -1,0 +1,68 @@
+
+
+* { margin: 0px; padding: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; }
+body {; font-size: 12px; color: #585858; background-color: #f8f8f8; }
+.clear { font-size: 0px; line-height: 0px; clear: both; height: 0px; visibility: hidden; }
+.font1 { font-size: 12px; color: #000000; font-family: "微软雅黑"; }
+.font2 { color: #000000; }
+.font3 { font-size: 14px; color: #484848; }
+.font4 { font-size: 12px; color: #192F46; }
+.font5 { font-size: 12px; color: #0033CC; }
+.link1 { font-size: 12px; color: #ffffff; text-decoration: none; font-family: arial, helvetica, sans-serif; }
+.link1:hover { font-size: 12px; color: #ffffff; text-decoration: underline; }
+.link2 { font-size: 14px; color: #484848; text-decoration: none; }
+.link2:hover { font-size: 14px; color: #484848; text-decoration: underline; }
+.main_body {}
+.main_left { background-color: #E0E1E3; width:210px; height:600px;}
+#wrapper { background-image: url(../../img_01/03.jpg); background-repeat: repeat-y; background-position: left; }
+#left { float: left; width: 210px; }
+#right { background-color: #eaeaea; margin-left: 224px; height: auto; }
+.left_body { background-color:#E0E1E3; }
+.content_body { background-color:#F7F6F6; }
+.bg_01 { background-color: #f3f3f3; border-top-width: 1px; border-top-style: solid; border-top-color: #FF0000; }
+.bg_02 { line-height: 36px; width:auto;border: 1px solid #D1D1D1; background-image: url(../../img_02/25.jpg); background-repeat: repeat; padding-left: 8px; }
+.txt_01 { width: 145px; height: 24px;  font-size: 14px; line-height: 22px; text-indent: 5px; font-family: Arial, Helvetica, sans-serif; color: #3A3A3A; }
+.txt_02 { width: 91px; background-image: url(../../img_02/14.jpg); background-repeat: no-repeat; font-size: 14px; text-indent: 10px; font-family: Arial, Helvetica, sans-serif; color: #6D6D6D; height: 20px; line-height: 22px; }
+.txt_02:hover { background-image: url(../../img_02/14.jpg); background-repeat: no-repeat; }
+.txt_03 { width: 88px; background-image: url(); height: 24px; background-repeat: no-repeat; font-size: 14px; line-height: 22px; text-indent: 8px; font-family: Arial, Helvetica, sans-serif; color: #3A3A3A; }
+.txt_03:hover { background-image: url(../../img_02/14.jpg); background-repeat: no-repeat; }
+.txt_04 { width: auto; font-size: 12px;  font-family: Arial, Helvetica, sans-serif; color: #505050; height: 20px; line-height: 20px; border: 1px solid #D2D2D2; }
+.txt_05 { width: auto; font-size: 12px; text-indent: 10px; font-family: Arial, Helvetica, sans-serif; color: #6D6D6D; height: 20px; line-height: 20px; border: 1px solid #D2D2D2; }
+	
+.button_01 { background-image: url(../../img_02/18.jpg); background-repeat: no-repeat; height: 20px; width: 40px; text-align: center; line-height: 20px; color: #505050; }
+.button_01:hover {
+	background-image: url(../../img_02/18.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	background-position: 0px -20px;
+}
+.button_02 { background-image: url(../../img_02/20.jpg); background-repeat: no-repeat; height: 19px; width: 32px; text-align: center; line-height: 20px; color: #0C3B5F; }
+.button_02:hover { background-image: url(../../img_02/20.jpg); background-repeat: no-repeat; color: #000000; }
+.button_03 { background-image: url(../../img_02/21.jpg); background-repeat: no-repeat; height: 19px; width: 32px; text-align: center; line-height: 20px; color: #0C3B5F; }
+.button_03:hover { background-image: url(../../img_02/21.jpg); background-repeat: no-repeat; color: #000000; }
+.button_04 { background-image: url(../../img_02/22.jpg); background-repeat: no-repeat; height: 19px; width: 32px; text-align: center; line-height: 20px; color: #0C3B5F; }
+.button_04:hover { background-image: url(../../img_02/22.jpg); background-repeat: no-repeat; color: #000000; }
+.button_05 { background-image: url(../../img_02/23.jpg); background-repeat: no-repeat; height: 19px; width: 32px; text-align: center; line-height: 20px; color: #0C3B5F; }
+.button_05:hover { background-image: url(../../img_02/23.jpg); background-repeat: no-repeat; color: #000000; }
+.button_06 { background-image: url(../../img_02/18.jpg); background-repeat: no-repeat; height: 20px; width: 40px; text-align: center; line-height: 20px; color: #505050; }
+.button_06:hover {
+	background-image: url(../../img_02/18.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	background-position: 0px -20px;
+}
+.button_07 {  }
+.button_07:hover {  }
+.button_08 {  }
+.button_08:hover {  }
+.button_09 { background-image: url(../../img_02/18.jpg); background-repeat: no-repeat; height: 20px; width: 40px; text-align: center; line-height: 20px; color: #505050; }
+.button_09:hover {
+	background-image: url(../../img_02/18.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	background-position: 0px -20px;
+}
+.bk01 { border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: #DCDCDC; border-bottom-color: #DCDCDC; border-left-color: #DCDCDC; }
+.bk02 { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DCDCDC; font-size: 13px; font-family: "微软雅黑"; }
+.line_01 { border-top-width: 1px; border-top-style: solid; border-top-color: #dddddd; }
+.line_02 { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #dddddd; font-size: 14px; font-weight: bold; font-family: "微软雅黑"; color: #4D0011; }

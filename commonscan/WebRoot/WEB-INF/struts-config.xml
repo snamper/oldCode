@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="userForm" type="jinrl_exploit_actionForm.UserForm" />
+		<form-bean name="datasourceForm" type="jinrl_exploit_actionForm.BusiInfoForm" />
+		<form-bean name="databrowseForm" type="jinrl_exploit_actionForm.BusiFieldForm" />
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+
+		<action attribute="userForm" name="userForm" path="/user"
+			scope="request" validate="false" cancellable="true" />
+		<action attribute="datasourceForm" name="datasourceForm" path="/busiInfo" parameter="method"
+			scope="request" validate="false" cancellable="true">
+			<forward name="databrowseSet" path="/pages/showtable.jsp"></forward>
+			<forward name="deletesuccess" path="/busiField.do?method=getBusiInfoid"></forward>
+			<forward name="showAddDataPage" path="/pages/addData.jsp"></forward>
+			<forward name="continueAddData" path="/busiInfo.do?method=showAddDataPage"></forward>
+			<forward name="showUpdatePage" path="/pages/updateData.jsp"></forward>
+		</action>
+		<action attribute="databrowseForm" name="databrowseForm" path="/busiField" parameter="method"
+			scope="request" validate="false" cancellable="true">
+			<forward name="datascourceId" path="/busiInfo.do?method=getBusiInfo"></forward>
+			<forward name="showAddDataPage" path="/busiInfo.do?method=showAddDataPage"></forward>
+		</action>
+
+	</action-mappings>
+	<controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor" />
+	<message-resources parameter="ApplicationResources" />
+</struts-config>
+

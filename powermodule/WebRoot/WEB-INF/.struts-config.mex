@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/checkpower.do" location="50,50" dimension="316,84" />
+  <StrutsActivity path="/user.do" location="60,165" dimension="280,84" />
+</FlowViewLayout>
+

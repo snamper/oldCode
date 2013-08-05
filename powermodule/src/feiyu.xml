@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="departpositionDAO" class="com.jinrl.powermodule.dao.TdepartpositionDAO">
+	</bean>
+	<bean id="positionfunctionDAO" class="com.jinrl.powermodule.dao.TpositionfunctionDAO">
+	</bean>
+	<bean id="functionDAO" class="com.jinrl.powermodule.dao.TfunctionDAO">
+	</bean>
+	<bean id="userDAO" class="com.jinrl.powermodule.dao.TuserDAO">
+	</bean>
+	<bean id="positionuserDAO" class="com.jinrl.powermodule.dao.TpositionuserDAO">
+	</bean>
+	<bean id="positionDAO" class="com.jinrl.powermodule.dao.TpositionDAO">
+	</bean>
+	<bean id="departmentDAO" class="com.jinrl.powermodule.dao.TdepartmentDAO">
+	</bean>
+	<bean id="moduletypeDAO" class="com.jinrl.powermodule.dao.TmoduletypeDAO"></bean>
+	<bean id="powermanageDAO" class="com.jinrl.powermodule.dao.TpowermanageDAO"></bean>
+	<bean id="statisticDAO" class="com.jinrl.powermodule.dao.TstatisticDAO"></bean>
+	<bean id="myDeskTopDAO" class="com.jinrl.powermodule.dao.TmyDeskTopDAO"></bean>
+	<bean id="checkpowerService" class="com.jinrl.powermodule.service.CheckPower">
+		<property name="userDao">
+			<ref bean="userDAO" />
+		</property>
+		<property name="fDao">
+			<ref bean="functionDAO" />
+		</property>
+		<property name="mDao">
+			<ref bean="moduletypeDAO"/>
+		</property>
+		<property name="pmDao">
+			<ref bean="powermanageDAO"/>
+		</property>
+	</bean>
+
+	<bean id="userService" class="com.jinrl.powermodule.service.UserService">
+		<property name="userDao">
+			<ref bean="userDAO"/>
+		</property>
+	</bean>
+
+	<bean name="/checkpower" class="com.jinrl.powermodule.action.CheckPowerAction">
+		<property name="cp">
+			<ref bean="checkpowerService" />
+		</property>
+	</bean>
+
+	<bean name="/user" class="com.jinrl.powermodule.action.UserAction">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+		<property name="cp">
+			<ref bean="checkpowerService" />
+		</property>
+	</bean>
+</beans>

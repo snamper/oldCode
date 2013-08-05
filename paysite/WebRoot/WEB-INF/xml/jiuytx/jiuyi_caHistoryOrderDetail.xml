@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>订单详细</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>返回</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <!--  修改页面对应的表单数据  -->
+    <selectsql>select co.fID, CONVERT(VARCHAR(23),fCreateTime,120)fCreateTime, fOrderID, fProductID,cp.fName,co.fPrice, fAccountID, fMoney, fCardNo,fPassword, fOverTime, co.fState, fNoticeState, fNoticeUrl,fFillMsg,fUserA,fUserB,fUserc from CaOrderQuery co left join CoProductType cp  on co.fProductID=cp.fID where co.fid='{id}'</selectsql>
+   <fieldChange>
+		<fieldChangeList>11,12</fieldChangeList>
+		<col_11>4=充值成功,5=充值失败,?=处理中</col_11>
+		<col_12>2=成功,3=失败,?=通知中</col_12>
+	</fieldChange>
+	 
+    <!-- 页面元素：参数"name"对应数据库字段名 -->  
+    <elements>
+        <element type="text"  name="fID"  class="必填" tag="系统订单号" tip="" size="30">      
+        </element>
+        <element type="text"  name="fCreateTime"  class="必填" tag="接收时间" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fOrderID"  class="必填" tag="客户订单号" tip="" size="30"> 
+        </element>  
+        <element type="text"  name="fProductID"  class="必填" tag="商品编号" tip="" size="30"> 
+        </element>
+        <element type="text"  name="ap.fName"  class="必填" tag="商品名称" tip="" size="60"> 
+        </element>
+        <element type="text"  name="ao.fPrice"  class="必填" tag="面额" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fPlayName"  class="必填" tag="充值账号" tip="" size="30"> 
+        </element>
+        
+        <element type="text"  name="fMoney"  class="必填" tag="金额" tip="" size="30"> 
+        </element>
+         <element type="text"  name="fCardNo"  class="必填" tag="账号" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fPassword"  class="必填" tag="密码" tip="" size="60">   
+        </element>
+        <element type="text"  name="fOverTime"  class="必填" tag="超时时间" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fState"  class="必填" tag="订单状态" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fNoticeState"  class="必填" tag="通知状态" tip="" size="30"> 
+        </element>
+        <element type="text"  name="fNoticeUrl"  class="必填" tag="通知地址" tip="" size="60"> 
+        </element>
+        <element type="text"  name="fFillMsg"  class="必填" tag="充值信息" tip="" size="60"> 
+        </element>
+         <element type="text"  name="fUserA"  class="必填" tag="附加信息1" tip="" size="60"> 
+        </element>
+        <element type="text"  name="fUserB"  class="必填" tag="附加信息2" tip="" size="60"> 
+        </element>
+        <element type="text"  name="fUserB"  class="必填" tag="附加信息3" tip="" size="60"> 
+        </element>
+    </elements>
+</config>            

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!--一级菜单-->
+  <firstlevel title="账户资料">
+	   <secondlevel id="pwdmodify" title="密码修改" href="client.do?method=modifyPwd">   
+	   </secondlevel>
+	   <secondlevel id="userinfomodify" title="资料修改" href="client.do?method=findUserInfo">     
+	   </secondlevel>  
+   </firstlevel>
+   <firstlevel title="账号订单">
+       <secondlevel id="productList" title="商品列表" href="general.do?method=findDataList&amp;name=jiuyi_productList">
+	   </secondlevel>
+	   <secondlevel id="orderFind" title="订单查询" href="general.do?method=findDataList&amp;name=jiuyi_orderlist">
+	   </secondlevel>
+	   <secondlevel id="orderstat" title="订单统计" href="general.do?method=findStatList&amp;name=moneyStat_jiuyi">
+	   </secondlevel>
+	         
+   </firstlevel> 
+     
+   <firstlevel title="资金管理">
+   		     <secondlevel id="addmoney"   title="帐户加款" href="general.do?method=addData&amp;name=jiuyi_addmoney">  
+		     </secondlevel> 
+		     <secondlevel id="findmoney"   title="帐户余额" href="general.do?method=viewDetail&amp;name=findmoney&amp;id=clientid">  
+		     </secondlevel> 
+             <secondlevel id="addmoneylog" title="加款记录" href="general.do?method=findDataList&amp;name=addmoney_jiuyi">
+		     </secondlevel>
+		     <secondlevel id="cutmoneylog" title="扣款退款记录" href="general.do?method=findDataList&amp;name=cutmoney_jiuyi">
+		     </secondlevel> 
+
+
+   </firstlevel>  
+   <firstlevel title="员工管理">
+	         <secondlevel id="staffmanager" title="员工查询" href="general.do?method=findStaffDataList">  
+		     </secondlevel>  
+   </firstlevel> 
+</config>

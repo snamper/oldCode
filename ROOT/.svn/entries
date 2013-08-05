@@ -1,0 +1,64 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT
+svn://192.168.9.140
+
+
+
+2011-10-21T13:25:52.343750Z
+380
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+build
+dir
+
+.classpath
+file
+
+
+
+
+2011-09-28T10:39:27.841706Z
+59b1d8d25564aaf6b3f366526c5d315d
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+.project
+file
+
+
+
+
+2011-09-28T10:39:27.846707Z
+cd1ca7adba0684cb09cf6f91fdb2b723
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+src
+dir
+
+WebContent
+dir
+
+.settings
+dir
+

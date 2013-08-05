@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>未来支付平台</title>
+<link href="../../images_jiuytx/style/global/master.css" rel="stylesheet" type="text/css" />  
+<link href="../../images_jiuytx/style/top/top.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="showName();";>
+  <!--登陆信息嵌套开始-->  
+    <div id="header_menu">
+  <div id="header_admin"> <a href="#"><img src="../../images_jiuytx/img/0.gif" border="0" class="menu_02" /></a><a href="#" onclick="checksubmit();"><img src="../../images_jiuytx/img/0.gif" border="0" class="menu_03" /></a></div>
+      <div id="header_exit"><span>尊敬的：<Strong id="username"></Strong>  &nbsp;&nbsp;您已经成功登录！</span><a href="#"><img src="../../images_jiuytx/img/0.gif"  width="37" height="38" border="0" class="menu_01" /></a></div>
+      <div class="clear"></div>
+  </div>  
+  <!--登陆信息嵌套结束-->
+</body>
+</html>
+<script>
+function showName(){
+var url=window.location.href;
+var username=url.substring(url.indexOf("name")+5,url.length);
+  document.getElementById("username").innerHTML=unescape(username);
+}
+function checksubmit(){
+	var url=window.location.href;
+	var path=url.substring(0,url.indexOf("/admin"));
+	window.top.location=path+"/LoginOutServlet";
+	}
+</script>

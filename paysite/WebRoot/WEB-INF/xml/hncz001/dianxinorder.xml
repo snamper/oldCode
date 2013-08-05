@@ -1,0 +1,45 @@
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>订单查询</subtitle>
+    <!--搜索条件-->
+  <!--   id 为“0” 表示不显示此类型搜索条件，为“1”表示显示-->
+	<searchType id="1">
+	   <sql></sql>
+	   <optionvalue>fID,fPlayName</optionvalue>
+	   <optionname>订单号,账号</optionname>
+	</searchType>
+	<searchTypeTwo field="">
+	     
+	</searchTypeTwo>
+    <!--列表数据-->
+	<listData>
+	   <sql>select CONVERT(VARCHAR(23),fCreateTime,120)fCreateTime,fID,fInsideID,fClientID,fPlayName,fMoney,fFactMoney,fState from AcOrder where 1=1 and fAgentID='{agentId}' </sql>
+	   <menuName>下单时间,订单号,商品类型,客户,账号,金额,已冲金额,订单状态</menuName>
+	</listData>
+	
+	<fieldChange>
+		<fieldChangeList>2,7</fieldChangeList>
+		<col_7>4=充值成功,5=充值失败,?=充值中</col_7>
+		<col_2>05=QB</col_2>		
+	</fieldChange>
+	
+       <!-- 时期查询对应数据库字段名称 -->
+	<dateField>fCreateTime</dateField>
+	 <!--分页跳转URL	-->  
+	 <pageUrl>/general.do?method=findDataList</pageUrl>
+     <!--删除方法-->
+     <deletemethod>
+      <sql>delete from CaOrder where fid in </sql>
+      <url></url>
+     </deletemethod>
+       <modifyconfig>   
+         <col></col><!-- 显示对应字段列数 -->
+         <buttonname></buttonname>  
+         <url></url>
+      </modifyconfig>
+	<!--   导出数据    id 为“0” 表示不显示此类型搜索条件，为“1”表示显示--> 
+	<exportData id="1">
+	    <sql>select CONVERT(VARCHAR(23),fCreateTime,120)fCreateTime,fID,fInsideID,fClientID,fPlayName,fMoney,fFactMoney,fState from AcOrder where 1=1 and fAgentID='{agentId}' </sql>
+	    <menuName>下单时间,订单号,商品类型,客户,账号,金额,已冲金额,订单状态</menuName>
+	</exportData>
+</config>

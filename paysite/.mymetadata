@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="paysite"
+  id="myeclipse.1291018068996"
+  context-root="/paysite"
+  j2ee-spec="5.0"
+  archive="paysite.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

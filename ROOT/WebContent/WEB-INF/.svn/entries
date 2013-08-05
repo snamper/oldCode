@@ -1,0 +1,58 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT/WebContent/WEB-INF
+svn://192.168.9.140
+
+
+
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+urlrewrite.xml
+file
+
+
+
+
+2011-09-28T10:39:27.753701Z
+746da4ea6712ce006ef2891b79ccbe9f
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+lib
+dir
+
+web.xml
+file
+
+
+
+
+2011-09-28T10:39:27.758702Z
+dde98a1fe441ab051d4e50651c59fe19
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+classes
+dir
+

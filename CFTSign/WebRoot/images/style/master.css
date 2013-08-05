@@ -1,0 +1,81 @@
+/* CSS Document */
+* { margin: 0px; padding: 0px; }
+body { font-size: 12px; }
+.clear { font-size: 0px; line-height: 0px; clear: both; height: 0px; visibility: hidden; }
+/*×ÖÌå*/
+.font0 { font-size: 12px; color: #454545; }
+.font1 { font-size: 12px; color: #555555; font-weight: bold; }
+.font2 { color: #2BB05F; font-family: "Î¢ÈíÑÅºÚ"; font-size: 18px; font-weight: bold; }
+.font3 { color: #323232; font-size: 14px; }
+.font4 { font-size: 14px; color: #333333; font-family: Arial; }
+.font5 { font-size: 26px; color: #05A542; font-family: Arial; }
+/*Á´½Ó*/
+.link1 { color: #404040; font-size: 14px; text-decoration: none; font-family: "Î¢ÈíÑÅºÚ"; }
+.link1:hover { text-decoration: underline; font-family: "Î¢ÈíÑÅºÚ"; color: #4D7F87; }
+.link2 { color: #ABABAB; font-size: 12px; text-decoration: none; }
+.link2:hover { text-decoration: underline; }
+.link3 { font-size: 12px; color: #3065CB; text-decoration: underline; }
+.link3:hover { text-decoration: none; }
+/*±³¾°*/
+
+/*¿ò*/
+
+.txt_01 { }
+.txt_02 { }
+/*°´Å¥*/
+.button_01 { height: 20px; border: 1px solid #ADBFC6; display: block; width: 85px; text-align: center; background-image: url(../02.jpg); background-repeat: no-repeat; background-position: center top; float: left; }
+.button_01:hover { height: 20px; border: 1px solid #ADBFC6; display: block; width: 85px; text-align: center; background-image: url(../02.jpg); background-repeat: no-repeat; background-position: center bottom; }
+.button_02 { height: 20px; border: 1px solid #ADBFC6; display: block; width: 75px; text-align: center; background-image: url(../02.jpg); background-repeat: no-repeat; background-position: center top; float: left; margin-left: 4px; }
+.button_02:hover { height: 20px; border: 1px solid #ADBFC6; display: block; width: 75px; text-align: center; background-image: url(../02.jpg); background-repeat: no-repeat; background-position: center bottom; }
+/*±ß¿ò*/
+
+.bk01 { }
+.bk02 { }
+/*ÏßÌõ*/
+.line_01 { }
+.line_02 { }
+/*½á¹¹*/
+
+/*Ê×Ò³*/
+#top { height: 10px; width: 540px; margin-right: auto; margin-left: auto; }
+#main { height: 290px; width: 540px; margin-right: auto; margin-left: auto; }
+#main_left { float: left; height: 290px; width: 356px; }
+#main_right { float: right; height: 290px; width: 174px; border-left-width: 1px; border-left-style: solid; border-left-color: #DAE2E8; }
+#product_list { height: 120px; width: 356px; }
+#product_list dl { float: left; height: 120px; list-style-type: none; }
+#product_list dt { display: block; height: 120px; width: 110px; float: left; }
+#product_list dd { display: block; float: left; height: 120px; width: 12px; }
+#product_list p { display: block; height: 85px; width: 110px; }
+#product_list h2 { display: block; height: 35px; width: 110px; font-size: 12px; font-weight: lighter; color: #0068A7; text-align: center; line-height: 32px; }
+#guild { height: 140px; width: 356px; font-family: "Î¢ÈíÑÅºÚ"; line-height: 20px; }
+#guild_p1 { height: 80px; width: 356px; padding-top: 3px; }
+#guild_p2 { height: 49px; width: 356px; padding-top: 8px; line-height: 23px; }
+#banner { height: 30px; width: 356px; }
+#hot { height: 120px; width: 160px; padding-left: 13px; }
+#hot_pic { height: 85px; width: 160px; }
+#hot h2 { height: 35px; width: 160px; font-size: 12px; font-weight: lighter; line-height: 32px; text-align: center; }
+#enter_text { height: 170px; width: 160px; padding-left: 13px; }
+#enter_text h2 { height: 16px; width: 160px; line-height: 16px; font-size: 14px; font-family: "Î¢ÈíÑÅºÚ"; display: block; padding-top: 4px; padding-bottom: 10px; }
+#enter_text_txt { height: 32px; width: 160px; display: block; padding-bottom: 12px; }
+.enter_text_list1 { height: 20px; width: 160px; display: block; }
+#enter_text_login { height: 38px; width: 160px; padding-top: 16px; }
+/*ÎÒµÄÉè¼Æ*/
+#my_design { height: 260px; width: 540px; margin-right: auto; margin-left: auto; background-repeat: no-repeat; padding-bottom: 8px; background-position: center top; }
+#name { height: 135px; width: 300px; margin-right: auto; margin-left: auto; padding-top: 62px; }
+#name_ctrl { height: 22px; width: 540px; margin-right: auto; margin-left: auto; }
+#name_ctrl_left { height: 22px; width: 300px; float: left; }
+#name_ctrl_right { height: 22px; width: 240px; float: right; line-height: 22px; text-align: right; }
+#weibo { float: left; height: 22px; width: 123px; }
+#pic_ctrl { float: right; height: 22px; width: 177px; line-height: 20px; }
+/*ÎÒµÄ¶©µ¥*/
+#order_form { height: 270px; width: 540px; margin-right: auto; margin-left: auto; }
+#title { height: 20px; width: 519px; padding-left: 21px; line-height: 20px; padding-bottom: 6px; }
+#order_form dl { height: 36px; width: 519px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DAE2E8; list-style-type: none; display: block; margin-left: 21px; }
+#order_form dt { float: left; height: 36px; width: 450px; }
+#order_form dd { float: right; height: 36px; width: 67px; line-height: 36px; }
+#order_form p { height: 36px; line-height: 36px; float: left; }
+#order_form h2 { height: 36px; font-weight: lighter; font-size: 12px; float: left; width: 95px; display: block; }
+#order_form h3 { float: left; height: 36px; width: 50px; font-size: 12px; font-weight: lighter; display: block; line-height: 36px; text-align: center; }
+#order_form a { float: right; height: 16px; width: 40px; display: block; margin-top: 10px; }
+#order_form a:hover { color: #B6E6B6; }
+#page { height: 20px; width: 540px; margin-right: auto; margin-left: auto; }

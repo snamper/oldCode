@@ -1,0 +1,34 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT/src
+svn://192.168.9.140
+
+
+
+2011-10-21T13:25:52.343750Z
+380
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+convert
+dir
+
+common
+dir
+

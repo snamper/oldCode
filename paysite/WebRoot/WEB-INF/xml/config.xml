@@ -1,0 +1,5 @@
+﻿<config>
+<!--邮件验证：发送EMAIL and emailpwd-->
+  <email name="junzheng2011@gmail.com" pwd="junzheng1003"></email>
+  <url>http://localhost:8080/pay</url>
+</config>

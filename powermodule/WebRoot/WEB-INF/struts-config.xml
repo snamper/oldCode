@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="checkpowerForm"
+			type="com.jinrl.powermodule.actionform.CheckPowerActionForm" />
+		<form-bean name="userForm" type="com.jinrl.powermodule.actionform.UserForm" />
+
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action attribute="checkpowerForm" name="checkpowerForm" path="/checkpower"
+			parameter="method" scope="request">
+			<forward name="loginsuccess" path="/desktop.jsp" redirect="true"></forward>
+			<forward name="changeleft" path="/left.jsp"></forward>
+			<forward name="loginerror" path="/login.jsp" redirect="true"></forward>
+			<forward name="showfunctionURL" path="/functionurl.jsp"></forward>
+			<forward name="logintrue" path="/checkpower.do?method=loginSuccess"></forward>
+		</action>
+		<action attribute="userForm" name="userForm" path="/user"
+			parameter="method" scope="request" >
+			<forward name="showCurrentUser" path="/userpages/showuser.jsp"></forward>
+			<forward name="showupdate" path="/userpages/updateuser.jsp"></forward>
+		</action>
+
+	</action-mappings>
+	<controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor">
+	</controller>
+	<message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

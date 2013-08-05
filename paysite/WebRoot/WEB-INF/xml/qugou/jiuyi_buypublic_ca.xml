@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>在线提单</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>提交</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <selectsql>select ct.fName,ct.fID from CaClientProduct cp left join  CoProductType ct on cp.fProductID=ct.fid   where cp.fid='{id}'</selectsql>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->
+    <elements>
+    <!--textT 类型的文本框，添加时value 从后台传值  值不允许修改-->
+        <element type="textT" name="fName" class="必填"  tag="商品名称" tip="" onKeypress="" >
+        </element>
+        <element type="textT" name="productId" class="必填" tag="商品ID"   tip="" onKeypress="">
+        </element>
+        <element type="select" name="money" class="必填" tag="卡面额" sql="select cp.fPrice,cp.fName  from  CaCardPrice cp left join CaClientProduct cc on cp.fProductID=cc.fProductID  where 1=1 and cc.fID='{id}'" tip="">
+        </element>   
+        <element type="text" name="cardno" class="必填" tag="卡号"   tip=""  onKeypress="">
+        </element>
+        <element type="text" name="cardpassword" class="必填" tag="密码"   tip=""  onKeypress="">
+        </element>
+      
+    </elements>
+    <submittype>sql</submittype><!-- 提交类型分为“sql” 和"url" 值都是对应urlpara节点-->
+    <submiteurl>http://{agentdomain}?MerOrderNo={orderID}&amp;MerchantID={clientId}&amp;CardType={productId}&amp;CardNo={cradno}&amp;CardPassword={cardpassword}&amp;Money={money}&amp;NoticeURL=&amp;CustomizeA=A&amp;CustomizeB=B&amp;CustomizeC=C&amp;IsEncrypt=v310&amp;sign=</submiteurl>
+    <urlpara>
+    777
+    </urlpara>  
+</config>       
+
+
+
+

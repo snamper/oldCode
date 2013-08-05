@@ -1,0 +1,17 @@
+#title { background-image: url(../../img_01/10.jpg); background-repeat: repeat-x; height: 39px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: #B7B6B6; border-right-color: #B7B6B6; border-bottom-color: #ffffff; border-left-color: #B7B6B6; padding-right: 12px; padding-left: 12px; }
+#title_right { float: right; height: 41px; width: 268px; padding-right: 10px; line-height: 41px; background-image: url(../../img_01/time.gif); background-repeat: no-repeat; background-position: 180px center; }
+#title_right h4 { font-weight: lighter; color: #454545; width: 179px; text-align: center; display: block; float: left; margin: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+#title_right h5 { display: block; height: 41px; width: 74px; float: right; margin: 0px; text-align: right; color: #7F011E; font-family: Arial, Helvetica, sans-serif; font-weight: lighter; font-size: 14px; }
+#title_left { height: 41px; margin-right: 278px; padding-left: 36px; background-image: url(../../img_01/title_01.gif); background-position: 10px center; background-repeat: no-repeat; line-height: 41px; color: #333333; font-size: 14px; font-family: "Î¢ÈíÑÅºÚ"; }
+#subtitle { display:none}
+
+#search { height: 53px; line-height: 53px; color: #454545; padding-right: 22px; padding-left: 22px; background-position: right; }
+.search_button_01 { background-image: url(../../img_01/11.jpg); background-repeat: no-repeat; height: 27px; width: 58px; }
+.search_button_01:hover { background-image: url(../../img_01/11.jpg); background-repeat: no-repeat; height: 27px; width: 58px; background-position: left -27px; }
+.search_button_02 { display:none }
+#search_list { border: 1px solid #cccccc; margin-right: 12px; margin-left: 12px; background-color: #FCFCFC; }
+#search_list01 { height: 0px; }
+#search_title { height: 40px; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; border-top-color: #ffffff; border-bottom-color: #cccccc; FILTER:  progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#EEEEEE, endColorStr=#E5E5E5);
+line-height: 40px; font-size: 16px; font-weight: bold; color: #000000; padding-left: 10px; font-family: "Î¢ÈíÑÅºÚ"; }
+#search_list_content { padding-top: 15px; padding-right: 15px; padding-left: 15px; }
+.search_table_01 { color: #333333; font-family: Arial, Helvetica, sans-serif; }

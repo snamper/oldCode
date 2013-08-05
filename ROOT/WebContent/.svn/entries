@@ -1,0 +1,46 @@
+8
+
+dir
+434
+svn://192.168.9.140/apiapp/ROOT/WebContent
+svn://192.168.9.140
+
+
+
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b3d8feef-0fa4-a34f-b545-1420ffbd770e
+
+META-INF
+dir
+
+index.jsp
+file
+
+
+
+
+2011-09-28T10:39:27.773702Z
+4371971c3e8979aa8c87ec841f26add0
+2011-09-28T07:26:32.852625Z
+333
+gaihl
+
+WEB-INF
+dir
+

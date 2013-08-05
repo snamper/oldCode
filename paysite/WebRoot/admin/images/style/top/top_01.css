@@ -1,0 +1,26 @@
+/*头部样式*/
+
+
+#header { height: 70px; background-image: url(../../img_01/02.jpg); padding-right: 14px; }
+#header_left { float: left; height: 70px; width: 300px; line-height: 70px; }
+#header_right { height: 70px; margin-left: 300px; text-align: right; }
+#header_menu {
+	width:100%;
+	height: 70px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	line-height: 70px;
+	background-image: url(../../img_01/02.jpg);
+	background-repeat: repeat-x;
+}
+#header_admin { float:right; width:78px; height:38px; padding-top: 16px; }
+#header_exit { margin-right:78px!important; margin-right:66px; height:38px; text-align: right; color: #F3DFDF; padding-top: 16px; }
+#header_exit span { height: 38px; margin-right: 25px; margin-left: 16px; display: block; float: right; line-height: 38px; }
+.menu_01 { text-decoration: none; background-image: url(../../img_01/menu_01.jpg); height: 38px; width: 37px; background-position: left top; }
+.menu_01:hover { text-decoration: underline; background-image: url(../../img_01/menu_01.jpg); background-position: left 38px; }
+.menu_02 { text-decoration: none; background-image: url(../../img_01/menu_02.jpg); height: 38px; width: 37px; background-position: left top; }
+.menu_02:hover { text-decoration: underline; background-image: url(../../img_01/menu_02.jpg); background-position: left 38px; }
+.menu_03 { text-decoration: none; background-image: url(../../img_01/menu_03.jpg); height: 38px; width: 37px; background-position: left top; }
+.menu_03:hover { text-decoration: underline; background-image: url(../../img_01/menu_03.jpg); background-position: left 38px; }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面的导航标签 -->
+    <subtitle>在线提单</subtitle>
+    <!-- 页面提交按钮名称 -->
+    <buttonname>提交</buttonname>
+    <!-- 对应表名 -->
+    <tablename>0</tablename>
+    <selectsql>select fName,fID,fPrice from  AcProduct where fid='{id}'</selectsql>
+    <!-- 页面元素：参数"name"对应数据库字段名 -->
+    <elements>
+    <!--   textT 类型的文本框，添加时value 从后台传值  值不允许修改-->
+        <element type="textT" name="fName" class="必填"  tag="商品名称"   tip="" onKeypress="" >
+        </element>
+        <element type="textT" name="fID" class="必填" tag="商品ID"   tip="" onKeypress="">
+        </element>
+        <element type="textT" name="fPrice" class="必填" tag="单价" tip="" onKeypress="">
+         </element>
+        <element type="text" name="fNumber" class="必填" tag="数量" tip="" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))">    
+        </element>
+        <element type="text" name="fPlayName" class="必填" tag="充值账号" tip="" onKeypress="">     
+        </element>
+        <element type="text" name="fPlayName2" class="必填" tag="重复充值账号" tip="" onKeypress="">  
+        </element>
+    </elements>
+    <submittype>sql</submittype><!-- 提交类型分为“sql” 和"url" 值都是对应urlpara节点-->
+    <submiteurl >http://{agentdomain}?oid={orderID}&amp;cid={clientId}&amp;pid={productId}&amp;pn={fPlayName}&amp;pr={fPrice}&amp;nb={fNumber}&amp;fm={fPrice*fNumber}&amp;at=&amp;ct=&amp;fr={fFillArea}&amp;fs={fFillServer}&amp;ru=&amp;info1=&amp;info2=&amp;info3=&amp;sign=</submiteurl>
+    <urlpara>
+    777
+    </urlpara>  
+</config>       
+
+
+
+
+
+

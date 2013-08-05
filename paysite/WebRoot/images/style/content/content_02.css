@@ -1,0 +1,57 @@
+
+
+#title { background-image: url(../../img_02/08.jpg); background-repeat: repeat-x; height: 34px; width: auto; padding-right: 20px; padding-left: 20px; line-height: 34px; overflow: hidden; }
+#title_right { float: right; height: 34px; width: 268px; line-height: 34px; background-image: url(../../img_01/time.gif); background-repeat: no-repeat; background-position: 180px center; }
+#title_right h4 { font-weight: lighter; width: 179px; text-align: center; display: block; float: left; margin: 0px; font-size: 14px; color: #40474D; font-family: Arial, Helvetica, sans-serif;  }
+#title_right h5 { display: block; height: 34px; width: 74px; float: right; margin: 0px; text-align: right; font-family: Arial, Helvetica, sans-serif; color: #1B3849; font-size: 14px; font-weight: bold; }
+#title_left { height: 34px; margin-right: 268px; line-height: 34px; color: #333333; font-family: "微软雅黑"; }
+#subtitle { height: 44px; padding-right: 12px; padding-left: 12px; line-height: 44px; font-size: 14px; font-weight: bold; color: #2D4162; }
+
+#search {
+	color: #454545;
+	padding-right: 12px;
+	padding-left: 12px;
+	background-position: right;
+	padding-bottom: 17px;
+	
+}
+.search_button_01 {
+	background-image: url(../../img_02/15.jpg);
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 47px;    
+	background-position: 0px 0px;
+}
+.search_button_01:hover {
+	background-image: url(../../img_02/15.jpg);
+	background-repeat: repeat;
+	height: 27px;
+	width: 47px;
+	background-position: 0px -27px;
+}
+.search_button_02 {
+	background-image: url(../../img_02/16.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.search_button_02:hover {
+	background-image: url(../../img_02/16.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#search_list{ height: auto; margin-right: 12px; margin-left: 12px; }
+
+#search_list01 { height: 0px; }
+#search_title { display:none;}
+#search_list_content { }
+.search_table_01 {
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
